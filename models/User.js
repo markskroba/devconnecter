@@ -1,4 +1,4 @@
-const mongoose = requie('mongoose');
+const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -9,7 +9,7 @@ const UserSchema = new mongoose.Schema({
         require: true,
         unique: true
     },
-    passwork: {
+    password: {
         type: String,
         required: true
     },
